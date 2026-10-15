@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@import "tailwindcss";
+
+/* Define theme variables for Tailwind v4 */
+@theme {
+  --color-accent: var(--accent-color);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-light: var(--accent-light);
+
+  --color-os-bg: var(--bg-primary);
+  --color-os-card: var(--card-bg);
+  --color-os-text: var(--text-primary);
+}
+
+:root {
+  --bg-primary: #0b0f17;
+  --bg-secondary: #0f172a;
+  --bg-tertiary: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --glass-bg: rgba(15, 23, 42, 0.85);
+  --glass-border: rgba(51, 65, 85, 0.5);
+  --window-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+  --taskbar-bg: rgba(11, 15, 23, 0.88);
+  --startmenu-bg: rgba(15, 23, 42, 0.95);
+  --card-bg: rgba(15, 23, 42, 0.9);
+  --card-border: rgba(30, 41, 59, 0.8);
+  --input-bg: #020617;
+
+  --accent-color: #06b6d4;
+  --accent-hover: #0891b2;
+  --accent-light: #cffafe;
+  --accent-rgb: 6, 182, 212;
+}
+
+html,
+body,
+#root {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Custom scrollbars */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Nexus OS",
+  "description": "Next-generation Web OS with system boot, power engine, lock screen, and custom desktop environment.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
